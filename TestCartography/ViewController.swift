@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import Cartography
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let label = UILabel()
+        label.text = "hello"
+        label.textColor = UIColor.black
+        label.backgroundColor = UIColor.brown
+        label.sizeToFit()
+        label.center = self.view.center
+        
+        self.view.backgroundColor = UIColor.blue
+        
+        self.view.addSubview(label)
     }
 
     override func didReceiveMemoryWarning() {
